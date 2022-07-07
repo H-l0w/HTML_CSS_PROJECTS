@@ -1,0 +1,93 @@
+body {
+  background-image: url("../Assets/Background.png");
+  background-repeat: repeat;
+  position: relative;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  max-width: 400px;
+  width: 100%;
+}
+
+.header {
+  background-image: url("../Assets/Pattern.png");
+  background-repeat: repeat;
+  background-color: rgb(35, 85, 242);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header h2 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.body, .bottom {
+  padding: 20px;
+}
+.body p, .bottom p {
+  text-align: center;
+}
+
+.info p {
+  margin-top: 0;
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.form input {
+  height: 30px;
+  max-width: 225px;
+  width: 100%;
+  background-color: rgb(247, 249, 254);
+}
+.form button {
+  height: 35px;
+  max-width: 120px;
+  width: 100%;
+  background-color: rgb(35, 85, 242);
+  color: white;
+}
+.form input, .form button {
+  border-radius: 5px;
+  border: solid 0.5px gray;
+}
+
+.note p {
+  text-align: left;
+  color: gray;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+}
+.person .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.person .name h4, .person .name p {
+  margin: 0;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
