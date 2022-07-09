@@ -14,6 +14,10 @@ img {
   height: 100%;
 }
 
+.hamburger {
+  display: none;
+}
+
 .navbar {
   margin-top: 10px;
   display: flex;
@@ -102,7 +106,7 @@ image img {
   margin-top: 50px;
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .first-article {
     flex-direction: column;
   }
@@ -145,10 +149,13 @@ image img {
     max-height: 500px !important;
   }
 }
-@media (max-width: 600) {
-  .footer {
-    flex-direction: row;
-    justify-content: unset;
-    flex-wrap: wrap;
+@media only screen and (max-width: 650px) {
+  .buttons {
+    display: none !important;
+  }
+
+  .hamburger {
+    margin-top: 5px;
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
