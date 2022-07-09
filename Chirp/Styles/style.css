@@ -1,0 +1,446 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a,
+p {
+  color: gray;
+}
+
+.top-color {
+  background-color: #FBF8F3;
+  padding-left: 25%;
+  padding-right: 25%;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.navbar h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 125%;
+}
+.navbar button {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 125%;
+}
+.navbar button img {
+  margin-top: 15px;
+  max-width: 40px;
+  height: 30px;
+}
+.navbar button P {
+  color: white;
+}
+.navbar .buttons {
+  margin-top: 10px;
+  display: flex;
+}
+.navbar .buttons .links {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  margin-right: 40px;
+  font-size: 125%;
+}
+.navbar .buttons a {
+  text-decoration: none;
+}
+.navbar .content {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  color: #3180F5;
+  font-style: italic;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.main-content .text {
+  padding-right: 100px;
+}
+.main-content .text h1 {
+  margin-bottom: 0;
+}
+.main-content .text .images {
+  margin-top: 25px;
+}
+.main-content .text .text-info {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.main-content .text .number {
+  color: #3180F5;
+}
+.main-content .text .learn-more {
+  display: flex;
+  color: #3180F5;
+}
+.main-content .text .learn-more .content {
+  display: flex;
+}
+.main-content .text .learn-more .text {
+  display: flex;
+}
+.main-content .text .learn-more h4 {
+  margin-left: 20px;
+}
+.main-content .text .learn-more button {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 125%;
+}
+.main-content .text .learn-more button img {
+  margin-top: 15px;
+  max-width: 40px;
+  height: 30px;
+}
+.main-content .text .learn-more button P {
+  color: white;
+}
+
+.data {
+  background-color: #D7F5F5;
+  padding: 20px;
+}
+.data .data-image img {
+  border-radius: 5px;
+}
+.data .top {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+}
+.data .top .select {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 110px;
+}
+.data .top .select select {
+  height: 30px;
+  width: 100%;
+}
+.data .person {
+  display: flex;
+}
+.data .person .name {
+  margin-left: 10px;
+}
+.data .person h4 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.data .person p {
+  margin: 0;
+}
+.data .stats {
+  margin-top: 10px;
+}
+.data .stat {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+.data .stat h3, .data .stat p {
+  margin: 0;
+}
+.data .stat .stat-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.features-container {
+  margin-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
+  max-width: 1000px;
+  width: 100%;
+}
+.features-container .features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features-container .features .feature {
+  border: solid 1px gray;
+  padding: 20px;
+  max-width: 430px;
+}
+.features-container .features .feature h3, .features-container .features .feature p {
+  margin: 0;
+}
+
+.bottom {
+  margin-top: 50px;
+  background-color: #D7F5F5;
+  padding-left: 25%;
+  padding-right: 25%;
+  max-width: 1000px;
+  width: 100%;
+}
+.bottom h1 {
+  margin-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+.bottom .reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding: 50px;
+  padding-top: 20px;
+}
+.bottom .reviews .review {
+  max-width: 300px;
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+.bottom .reviews .review .reviews-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom .reviews .review .reviews-footer .likes {
+  display: flex;
+}
+.bottom .reviews .review .reviews-footer .likes p {
+  margin-left: 5px;
+}
+.bottom .reviews .review .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom .reviews .review .person .image-name {
+  display: flex;
+  flex-direction: row;
+}
+.bottom .reviews .review .person .image-name .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.bottom .reviews .review .person .iamge-twitter img {
+  max-width: 30px;
+}
+.bottom .reviews .review .person p, .bottom .reviews .review .person h4 {
+  margin: 0;
+}
+
+.pricing {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.pricing .plan {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #FBF8F3;
+  border: 1px solid #FDE2B5;
+}
+.pricing .plan .twitter-button button {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 125%;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.pricing .plan .twitter-button button img {
+  margin-top: 15px;
+  max-width: 40px;
+  height: 30px;
+}
+.pricing .plan .twitter-button button P {
+  color: white;
+}
+.pricing .plan .pros .pro {
+  display: flex;
+}
+.pricing .plan .pros .pro img {
+  margin-right: 10px;
+}
+.pricing .plan .plan-title {
+  text-align: left;
+}
+.pricing .plan .plan-title h4 {
+  font-weight: 100;
+  color: gray;
+  margin: 0;
+}
+.pricing .plan .plan-title .price-tag {
+  display: flex;
+}
+.pricing .plan .plan-title .price-tag .tag {
+  margin-top: 30px;
+}
+.pricing .plan .plan-title hr {
+  color: white;
+  height: 2px;
+  border: none;
+}
+.pricing .plan .plan-title .price {
+  font-size: 300%;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #D7F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .policy-terms {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 300px;
+  width: 100%;
+}
+.footer .policy-terms p {
+  margin-top: 20px;
+}
+.footer .policy-terms img {
+  max-width: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .main-content .text {
+    margin-bottom: 50px;
+    padding-right: 0;
+  }
+  .main-content .data {
+    display: flex;
+  }
+  .main-content .data .stats {
+    margin-top: 0;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .main-content .data .stats .stat .stat-title {
+    flex-direction: column;
+  }
+  .main-content .data .stats .stat .stat-title h3 {
+    margin-bottom: 10px;
+  }
+
+  .features-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .features-container .features .feature {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .top-color {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bottom .reviews {
+    flex-direction: column;
+  }
+  .bottom .reviews .review {
+    width: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger button {
+    background-color: gray;
+    margin-top: 10px;
+  }
+  .hamburger button img {
+    margin-top: 5px;
+  }
+
+  .navbar .buttons {
+    display: none;
+  }
+
+  .learn-more {
+    width: 100%;
+    flex-direction: column;
+  }
+  .learn-more .content {
+    justify-content: center;
+  }
+  .learn-more h4 {
+    text-align: center;
+  }
+
+  .data {
+    flex-direction: column;
+  }
+  .data .top {
+    max-width: 540px;
+    padding: 0;
+  }
+  .data .top .person .image img {
+    max-width: 50px;
+    height: 50px;
+  }
+  .data img {
+    max-width: 540px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .main-content .data .stats {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .main-content .data .stats .stat {
+    max-width: 520px;
+  }
+}/*# sourceMappingURL=style.css.map */
