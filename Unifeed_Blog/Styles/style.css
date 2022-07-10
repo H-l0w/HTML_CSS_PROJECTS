@@ -130,7 +130,7 @@ image img {
 
   .first-article .image {
     max-width: 900px;
-    max-height: 500px !important;
+    max-height: 500px;
   }
 
   img {
@@ -138,20 +138,20 @@ image img {
     max-height: 500px;
   }
 
-  .article {
-    max-width: 900px !important;
+  .articles .article {
+    max-width: 900px;
   }
-  .article h1 {
+  .articles .article h1 {
     margin-bottom: 0;
   }
-  .article .image {
-    max-width: 900px !important;
-    max-height: 500px !important;
+  .articles .article .image {
+    max-width: 900px;
+    max-height: 500px;
   }
 }
 @media only screen and (max-width: 650px) {
-  .buttons {
-    display: none !important;
+  .navbar .buttons {
+    display: none;
   }
 
   .hamburger {

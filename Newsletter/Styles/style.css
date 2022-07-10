@@ -1,7 +1,7 @@
 body {
   background-image: url("../Assets/Background.png");
-  background-repeat: repeat;
-  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .newsletter {
@@ -9,17 +9,16 @@ body {
   justify-content: center;
   margin: 0 auto;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 20%);
+  align-items: center;
+  padding-top: 10%;
   max-width: 400px;
   width: 100%;
 }
 
 .header {
   background-image: url("../Assets/Pattern.png");
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgb(35, 85, 242);
   padding-bottom: 20px;
   padding-top: 20px;
@@ -60,6 +59,7 @@ body {
   max-width: 225px;
   width: 100%;
   background-color: rgb(247, 249, 254);
+  margin-bottom: 10px;
 }
 .form button {
   height: 35px;

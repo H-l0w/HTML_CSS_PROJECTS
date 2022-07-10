@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: gray;
+  font-size: 125%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  font-size: 125%;
+}
+.navbar .left {
+  display: flex;
+  gap: 10px;
+}
+.navbar .left a {
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #EA915D;
+  margin-top: 5px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.navbar .left img {
+  margin-top: 10px;
+  height: 35px;
+}
+.navbar .middle {
+  display: flex;
+  gap: 20px;
+}
+.navbar .middle a {
+  margin-top: 25px;
+}
+.navbar .right {
+  display: flex;
+}
+.navbar .right a {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.navbar .right button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #4977EA;
+  font-size: 125%;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 700px;
+  height: 100%;
+}
+.main-content .text {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 100px;
+}
+.main-content .text h1 {
+  font-size: 300%;
+  margin-bottom: 0;
+}
+.main-content .text form {
+  margin-right: 0;
+}
+.main-content .text form input {
+  height: 50px;
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 125%;
+}
+.main-content .text form button {
+  background-color: #4977EA;
+  max-width: 145px;
+  width: 100%;
+  height: 59px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #4977EA;
+  font-size: 125%;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main-content .text .note {
+  display: flex;
+  gap: 20px;
+}
+.main-content .container {
+  position: relative;
+}
+.main-content .container img {
+  position: absolute;
+  max-height: 700px;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

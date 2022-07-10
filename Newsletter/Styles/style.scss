@@ -3,7 +3,8 @@ $input-gray: rgb(247, 249, 254);
 
 @mixin background-image($image) {
     background-image: url($image);
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @mixin center {
@@ -19,18 +20,13 @@ $input-gray: rgb(247, 249, 254);
 
 body{
     @include background-image("../Assets/Background.png");
-    position: relative;
 }
 
 .newsletter{
     @include center();
     flex-direction: column;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-      transform: translate(-50%, 20%);
-
+    align-items: center;
+    padding-top: 10%;
 
     max-width: 400px;
     width: 100%;
@@ -81,7 +77,8 @@ body{
     input{
         height: 30px;
         @include max-width(225px);
-        background-color: $input-gray
+        background-color: $input-gray;
+        margin-bottom: 10px;
     }
 
     button{
