@@ -1,5 +1,9 @@
 $hiring-color: #EA915D;
 $join-color: #4977EA;
+$back-color: #F8F5E8;
+
+$tablet: 1150px;
+$mobile: 550px;
 
 @mixin join-waitlist-button {
     border: none;
@@ -14,7 +18,9 @@ $join-color: #4977EA;
 
 body {
     font-family: sans-serif;
-
+    background-color: $back-color;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 p {
@@ -30,6 +36,11 @@ a {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .hamburger{
+        display: none;
+    }
 
     a {
         font-size: 125%;
@@ -45,13 +56,12 @@ a {
             border-radius: 30px;
 
             background-color: $hiring-color;
-            margin-top: 5px;
 
             height: min-content
         }
 
         img {
-            margin-top: 10px;
+            margin-top: 5px;
             height: 35px;
         }
     }
@@ -59,10 +69,6 @@ a {
     .middle {
         display: flex;
         gap: 20px;
-
-        a {
-            margin-top: 25px;
-        }
     }
 
     .right {
@@ -70,12 +76,13 @@ a {
 
 
         a {
-            margin-top: 20px;
             margin-right: 20px;
+            margin-top: 20px;
         }
 
 
         button {
+            padding: 20px;
             @include join-waitlist-button();
         }
     }
@@ -86,37 +93,35 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 700px;
-    height: 100%;
+    margin-top: 100px;
+    height: 550px;
 
     .text {
+        width: max-content;
+        margin-right: 100px;
+        max-width: 700px;
 
         h1 {
             font-size: 300%;
             margin-bottom: 0;
         }
 
-        max-width: 500px;
-        width: 100%;
-        margin-right: 100px;
-
         form {
             margin-right: 0;
+            display: flex;
+            gap: 10px;
 
             input {
+                border: none;
                 height: 50px;
-                max-width: 340px;
-                width: 100%;
                 margin-bottom: 20px;
                 font-size: 125%;
             }
 
             button {
                 background-color: $join-color;
-                max-width: 145px;
-                width: 100%;
-                height: 59px;
-
+                height: 50px;
+                min-width: 140px;
                 @include join-waitlist-button();
             }
         }
@@ -126,14 +131,78 @@ a {
             gap: 20px;
         }
     }
+}
 
-    .container{
-        position: relative;
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: baseline;
 
-        img{
-            position: absolute;
-            max-height: 700px;
-            height: 100%;
+    .social{
+        display: flex;
+        gap: 20px
+    }
+
+    .question{
+        display: flex;
+        align-self: baseline;
+        .question-text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+
+            p, h4{
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet){
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .navbar{
+        .middle, .right{
+            display: none
+        }
+
+        .hamburger{
+            display: block;
+        }
+    }
+
+    .main-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: unset;
+
+        .text{
+            margin-right: 0;
+            max-width: fit-content;
+
+            h1{
+                margin-top: 0;
+            }
+        }
+    }
+
+    .footer{
+        margin-top: 0;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: $mobile){
+    .footer{
+        align-items: baseline;
+        flex-direction: column;
+
+        .social{
+            margin-bottom: 30px;
         }
     }
 }
