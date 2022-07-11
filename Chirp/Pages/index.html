@@ -27,11 +27,26 @@
                     </div>
                 </button>
             </div>
-            <div class="hamburger">
-                <button>
+            <div class="hamburger" id="hamburger">
+                <button onclick="hamburgerMenu()">
                     <img src="../Assets/Hamburger Menu.svg" alt="">
                 </button>
             </div>
+        </div>
+        <div class="close">
+            <button onclick="closeMenu()"></button>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <a href="#">Chirp.</a>
+            <hr>
+            <a href="#">Home</a>
+            <hr>
+            <a href="#">Pricing</a>
+            <hr>
+            <a href="#">FAQ</a>
+            <hr>
+            <a href="#">Sign in with Twitter</a>
+            <hr>
         </div>
         <div class="main-content">
             <div class="text">
@@ -288,6 +303,6 @@
             <p>Terms of Uses</p>
         </div>
     </div>
+    <script src="../Scripts/script.js"></script>
 </body>
-
 </html>

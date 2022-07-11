@@ -113,11 +113,13 @@ image img {
   .first-article .text {
     margin-left: 0;
   }
+
   body {
     max-width: 900px;
     margin: 0 auto;
     padding: 15px;
   }
+
   .articles {
     flex-direction: column;
     margin-top: 50px;
@@ -125,14 +127,17 @@ image img {
   .articles .text {
     margin-left: 0;
   }
+
   .first-article .image {
     max-width: 900px;
     max-height: 500px;
   }
+
   img {
     max-width: 900px;
     max-height: 500px;
   }
+
   .articles .article {
     max-width: 900px;
   }
@@ -148,6 +153,7 @@ image img {
   .navbar .buttons {
     display: none;
   }
+
   .hamburger {
     margin-top: 5px;
     display: block;
