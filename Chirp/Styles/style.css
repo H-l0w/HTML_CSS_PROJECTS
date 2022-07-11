@@ -361,7 +361,6 @@ p {
   .main-content .data .stats .stat .stat-title h3 {
     margin-bottom: 10px;
   }
-
   .features-container {
     padding-left: 0;
     padding-right: 0;
@@ -372,12 +371,10 @@ p {
     max-width: fit-content;
     width: 100%;
   }
-
   .top-color {
     padding-left: 0;
     padding-right: 0;
   }
-
   .bottom {
     padding-left: 0;
     padding-right: 0;
@@ -403,11 +400,9 @@ p {
   .hamburger button img {
     margin-top: 5px;
   }
-
   .navbar .buttons {
     display: none;
   }
-
   .learn-more {
     width: 100%;
     flex-direction: column;
@@ -418,7 +413,6 @@ p {
   .learn-more h4 {
     text-align: center;
   }
-
   .data {
     flex-direction: column;
   }
@@ -435,7 +429,6 @@ p {
     height: 300px;
     width: 100%;
   }
-
   .main-content .data .stats {
     margin-top: 20px;
     margin-left: 0;

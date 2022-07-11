@@ -4,6 +4,7 @@ $back-color: #F8F5E8;
 
 $tablet: 1150px;
 $mobile: 550px;
+$hiring: 460px;
 
 @mixin join-waitlist-button {
     border: none;
@@ -14,6 +15,11 @@ $mobile: 550px;
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@mixin no-background {
+    border: none;
+    background-color: transparent;
 }
 
 body {
@@ -29,8 +35,14 @@ p {
 }
 
 a {
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
     color: gray;
+}
+
+a:hover{
+    background-color: $hiring-color;
 }
 
 .navbar {
@@ -40,6 +52,9 @@ a {
 
     .hamburger{
         display: none;
+        button{
+            @include no-background();
+        }
     }
 
     a {
@@ -89,12 +104,40 @@ a {
 
 }
 
+.hamburger-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 200%;
+
+    img{
+        margin-bottom: 20px;
+        max-width: 250px;
+        width: 100%;   
+    }
+}
+
+.close{
+    margin-top: 20px;
+    display: none;
+    text-align: right;
+
+    button{
+        @include no-background();
+        background-image: url("../Assets/close.png");
+        background-repeat: no-repeat;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 100px;
-    height: 550px;
+    margin-top: 50px;
+    height: 650px;
 
     .text {
         width: max-content;
@@ -171,7 +214,7 @@ a {
         }
 
         .hamburger{
-            display: block;
+            display: block !important;
         }
     }
 
@@ -203,6 +246,18 @@ a {
 
         .social{
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: $hiring){
+    .navbar{
+        .hamburger{
+            margin-bottom: 60px;
+        }
+
+        .left{
+            flex-direction: column;
         }
     }
 }
