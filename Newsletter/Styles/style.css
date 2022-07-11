@@ -1,3 +1,79 @@
+.newsletter {
+  -webkit-animation: popup 0.5s;
+          animation: popup 0.5s;
+}
+
+@-webkit-keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(0.1);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(0.1);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   background-image: url("../Assets/Background.png");
   background-size: cover;
