@@ -4,7 +4,7 @@ let isOpened = false;
 addEventListener('resize', (event) => {});
 
 onresize = (event) => {
-    if (window.innerWidth >= 1150 && isOpened){
+    if (window.innerWidth >= 1160 && isOpened){
         let button = document.querySelector("#hamburger");
         closeMenu();
 
